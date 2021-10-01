@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Repo</title>
+    <link rel="stylesheet" href="style-home.css" />
+    <script src="script-home.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gluten:wght@100&family=Patrick+Hand&family=Shadows+Into+Light&family=Vollkorn&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="heading-container">
+        <h1>|| Git User Details || </h1>
+        <h2>Enter a valid Github username to display realtime info </h2>
+        <a href="index.html"><button type="submit">Back to index</button></a>
+    </div>
+    <div class="container">
+  
+        <div class="user-name">
+            <input type="text" id="user" name="name" placeholder="text"/>
+        </div>
+        <div class="submit-button">
+            <!-- Sending valid git ID to fetch data  -->
+            <button type="submit" onclick="getUser();">Click</button>
+        </div>
+    </div>
+    <div class="user-content">
+        
+            <!-- Details from API -->
+            <div class="git-user-name">
+                <h3>Name : </h2>
+                <h3 id="name"></h2>
+            </div>
+            <div class="git-user-location">
+                <h3>Location : </h2>
+                <h3 id="location"></h2>
+            </div>
+            <div class="git-user-url">
+                <h3>URL : </h2>
+                <h3 id="html_url"></h2>
+            </div>
+            <div class="git-user-repo">
+                <h3>Public Repository : </h2>
+                <h3 id="public_repos"></h2>
+            </div>
+            <div class="git-user-create">
+                <h3>A/C Created at : </h2>
+                <h3 id="created_at"></h2>
+            </div>
+        
+    </div>
+    
+</body>
+</html>

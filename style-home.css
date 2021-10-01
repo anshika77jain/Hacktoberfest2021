@@ -1,0 +1,86 @@
+body{
+    margin : 0;
+    padding: 0;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Gluten', cursive;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Vollkorn', serif;
+    color : whitesmoke;
+}
+.heading-container{
+   
+    padding: 40px;
+    margin-top: -50px;
+    text-align: center;
+    background: black;
+   opacity: 0.5;
+}
+.container{
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.user-content{
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.git-user-name{
+    /* margin-left: 500px;
+    margin-right: 500px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.git-user-location{
+    /* margin-left: 500px;
+    margin-right: 500px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.git-user-url{
+    /* margin-left: 500px;
+    margin-right: 500px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.git-user-repo{
+    /* margin-left: 500px;
+    margin-right: 500px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.git-user-create{
+    /* margin-left: 500px;
+    margin-right: 500px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.git-user-name{
+    /* margin-left: 500px;
+    margin-right: 300px; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
