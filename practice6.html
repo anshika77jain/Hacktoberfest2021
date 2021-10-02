@@ -42,13 +42,14 @@
             align-items: center;
             /* height: 82vh; */
             padding: 30px;
+            text-align: center;
             
         }
 
         .left {
             background-color: blue;
             color: white;
-            height: 334px;
+            height: 234px;
             width: 424px;
             border: 3px solid black;
             border-radius: 15px;
@@ -57,7 +58,7 @@
         .right {
             background-color: red;
             color: white;
-            height: 334px;
+            height: 234px;
             width: 424px;
             border: 3px solid black;
             border-radius: 15px;
@@ -77,10 +78,53 @@
             background-size: cover;
             height: 22vh;
         }
-        body{
-            /* background-color: aqua; */
-        }
-        }
+       
+        .wrapper{
+    display: inline-flex;
+}
+.wrapper .static-text{
+    color: red;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-text{
+margin-bottom: 5px;
+}
+.dynamic-text li{
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    color:red;
+}
+.dynamic-text li span{
+    position: relative;
+}
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: white;
+    border-left: 2px solid red;
+    animation: typing 1.5s steps(9) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+margin: 0 -35px 0 35px;
+    }
+}
+
+footer{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin-top: 110px;
+}
+
     </style>
 </head>
 
@@ -95,9 +139,12 @@
             </ul>
         </nav>
     </header>
-    <div class="image">
-        
-    </div>
+    <div class="wrapper">
+        <div class="static-text">Hello</div>
+        <ul class="dynamic-text">
+            <li><span>Welcome Here</span></li>
+        </ul>
+        </div>
     <div class="container">
         <div class="left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum architecto exercitationem fugiat saepe
@@ -110,6 +157,9 @@
             tempore iste eum excepturi quaerat autem!
         </div>
     </div>
+    <footer>
+        2021 Copyright © All right reserved
+    </footer>
 </body>
 
 </html>
