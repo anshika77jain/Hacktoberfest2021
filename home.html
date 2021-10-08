@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is Portfolio of Harman Batheja" />
+  <meta name="google-site-verification" content="uypzaJUyxLFpoLtze3B9F0b2umNgF3MrWtKUg_H8Akc" />
+  <link rel="icon" href="Harman.jpg">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <!-- Title -->
+  <title>Harman Batheja</title>
+  
+  <style>
+    /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* Custom css variables */
+
+:root {
+
+    --skin-color: #fb839e;
+    --bg-black-900: #000000;
+    --bg-black-100: #dddddd;
+    --bg-black-50: #eff0f4;
+    --text-black-900: #000000;
+    --text-black-700: #555555;
+    --text-black-600: #666666;
+    --text-black-300: #bbbbbb;
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow-0: 0px 0px 0px #d0d0d0, 0px 0px 0px  #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+    --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-black-600);
+    height: 3px;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px !important;
+    margin: auto !important;
+}
+
+.row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.outer-shadow {
+    box-shadow: var(--outer-shadow);
+}
+
+.inner-shadow {
+    box-shadow: var(--inner-shadow);
+}
+
+.hover-in-shadow {
+    position: relative;
+    z-index: 1;
+}
+
+.hover-in-shadow:hover {
+    box-shadow: var(--outer-shadow-0);
+}
+
+.hover-in-shadow:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: all 0.3s ease;
+    z-index: -1;
+}
+
+.hover-in-shadow:hover:after {
+    box-shadow: var(--inner-shadow);
+}
+
+*:not(i) {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+:before, :after {
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    text-decoration: none;
+    /* color: initial; */
+}
+
+button {
+    outline: none;
+}
+
+/* Global Styles */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn-1 {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--skin-color);
+    background-color: transparent;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all .3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.btn-1:hover {
+    color: var(--skin-color);
+}
+
+.btn-1:after {
+    border-radius: 30px;
+}
+
+.effect-wrap .effect {
+    position: absolute;
+    z-index: -1;
+}
+
+.effect-1 {
+    width: 30px;
+    height: 30px;
+    border: 4px solid #8a49ff;
+    right: 10%;
+    bottom: 10%;
+    animation: spin 10s linear infinite; 
+}
+
+.effect-2 {
+    left: 3%;
+    bottom: 20%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: topBounce 3s ease-in-out infinite;
+}
+
+.effect-2 div {
+    height: 3px;
+    width: 3px;
+    background-color: #ff9c07;
+    margin: 0 3px 8px;
+}
+
+.effect-3 {
+    height: 180px;
+    width: 180px;
+    border: 25px solid var(--skin-color);
+    border-radius: 50%;
+    left: 50%;
+    top: -35px;
+    animation: leftBounce 3s ease-in-out infinite;
+}
+
+.effect-4 {
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    left: 30%;
+    top: 20%;
+    animation: spin 15s linear infinite;
+}
+
+.effect-4:before {
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+}
+
+.effect-5 {
+    height: 50px;
+    width: 50px;
+    right: 10%;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 10s linear infinite;
+}
+
+.effect-5 div {
+    width: 1px;
+    background-color: #4dd0e1;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+
+@keyframes topBounce {
+    0%, 100% { transform: translateY(0) }
+    50% { transform: translateY(25px) }
+}
+
+@keyframes leftBounce {
+    0%, 100% { transform: translateX(0) }
+    50% { transform: translateX(25px) }
+}
+
+.section-title {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-title h2:before {
+    content: attr(data-heading);
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--skin-color);
+}
+
+.section.hide {
+    display: none;
+}
+
+/* Preloader */
+
+.preloader {
+    background-color: #222;
+    opacity: 0.9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+}
+
+.preloader.opacity-0 {
+    opacity: 0;
+}
+
+.preloader .loader {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 0.25rem solid #e3e3e3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-top: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Navbar */
+
+.header li, .header a, .header button {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.header .nav__links {
+    list-style: none;
+}
+
+.header .nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav__links li a {
+    transition: all .3s ease 0s;
+    color: #fff;
+}
+
+.nav__links li a i {
+    color: #fff;
+}
+
+.nav__links li a:hover {
+    color: lightgray;
+}
+
+/* Home */
+
+.home-section {
+    overflow: hidden;
+    position: relative;
+}
+
+.home-section .full-screen {
+    padding: 50px 0;
+    min-height: 100vh;
+}
+
+.home-section .home-text, .home-section .home-img {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.home-section .home-text p {
+    color: var(--text-black-300);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.home-section .home-text h2 {
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin: 0;
+}
+
+.home-section .home-text h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-black-700);
+    margin: 0;
+}
+
+.home-section .home-text .btn-1 {
+    margin-top: 30px;
+}
+
+.home-section .home-img .img-box {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.home-section .home-img .img-box img {
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+}
+
+/* About Section */
+
+.about-section {
+    padding: 80px 0 0;
+    min-height: 100vh;
+}
+
+.about-section .about-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 15px;
+}
+
+.about-section .about-img .img-box {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.about-section .about-img .img-box img {
+    width: 100%;
+    border: 10px solid transparent;
+    border-radius: 5px;
+}
+
+.about-section .about-img .social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-section .about-img .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--text-black-600);
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.about-section .about-img .social-links a i {
+    line-height: 40px;
+}
+
+.about-section .about-img .social-links a:after {
+    border-radius: 50%;
+}
+
+.about-section .about-img .social-links a:hover {
+    color: var(--skin-color);
+}
+
+.about-section .about-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 15px;
+}
+
+.about-section .about-info p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    color: var(--text-black-600);
+}
+
+.about-section .about-info span {
+    font-weight: 600;
+}
+
+.about-section .about-info .btn-1 {
+    margin: 30px 20px;
+}
+
+.about-section .about-tabs {
+    padding: 60px 15px 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.about-section .about-tabs .tab-item {
+    display: inline-block;
+    margin: 0 5px 10px;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: all .3s ease;
+    font-size: 16px;
+    color: var(--text-black-600);
+    font-weight: 500;
+}
+
+.about-section .about-tabs .tab-item:hover:not(.active) {
+    opacity: 0.6;
+}
+
+.about-section .about-tabs .tab-item.active {
+    color: var(--skin-color);
+}
+
+.about-section .tab-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about-section .skills {
+    padding: 0 0 40px;
+    margin-left: 10px;
+}
+
+.about-section .skills .skill-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+.about-section .skills .skill-item p {
+    font-size: 16px;
+    color: var(--text-black-600);
+    margin: 0 0 10px;
+}
+
+.about-section .skills .skill-item .progresses {
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    background-color: transparent;
+}
+
+.about-section .skills .skill-item .progress_bar {
+    background-color: var(--text-black-600);
+    height: 6px;
+    left: 7px;
+    top: 7px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.about-section .skills .skill-item .progress_bar span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-black-600);
+    margin-top: -40px;
+}
+
+/* Services section */
+
+.service-section {
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
+
+.service-section .service-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-section .service-item-inner {
+    padding: 50px 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.service-section .service-item-inner .icon {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .3s ease;
+    display: block;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.service-section .service-item-inner .icon:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.service-section .service-item-inner:hover .icon {
+    box-shadow: var(--inner-shadow-0);
+}
+
+.service-section .service-item-inner:hover .icon:after {
+    box-shadow: var(--outer-shadow);
+}
+
+.service-section .service-item-inner .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all .3s ease;
+}
+
+.service-section .service-item-inner:hover .icon i {
+    color: var(--skin-color);
+}
+
+.service-section .service-item-inner h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-black-700);
+    margin: 0 0 10px;
+}
+
+.service-section .service-item-inner p {
+    font-size: 16px;
+    color: var(--text-black-600);
+    margin: 0;
+    line-height: 26px;
+}
+
+/* Contact Section */
+
+.contact-section {
+    padding: 80px 0 80px;
+}
+
+.contact-section .contact-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.contact-section .contact-item-inner {
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-section .contact-item-inner i {
+    font-size: 25px;
+    color: var(--skin-color);
+}
+
+.contact-section .contact-item-inner span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-black-700);
+    margin: 15px 0 10px;
+    text-transform: capitalize;
+}
+
+.contact-section .contact-item-inner p {
+    font-size: 16px;
+    color: var(--text-black-600);
+    line-height: 26px;
+    margin: 0;
+    word-break: break-word;
+}
+
+.contact-section .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+.contact-section .w-50 {
+    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact-section .input-group {
+    margin: 0 0 25px;
+    transition: all .3s ease;
+    border-radius: 30px;
+}
+
+.contact-section .input-group:after {
+    border-radius: 30px;
+}
+
+.contact-section .input-group .input-control {
+    height: 45px;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0 15px;
+    color: var(--text-black-700);
+}
+
+.contact-section .input-group textarea.input-control {
+    height: 184px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.contact-section .submit-btn {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    padding: 0 15px;
+}
+    
+    @media(max-width: 991px) {
+    .service-section .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 832px) {
+    .contact-section .w-50,
+    .contact-section .contact-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact-section .submit-btn {
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .service-section .service-item,
+    .about-section .skills .skill-item,
+    .about-section .about-info,
+    .home-section .home-text,
+    .home-section .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home-section .home-text {
+        order: 2;
+    }
+
+    .home-section .home-text {
+        text-align: center;
+    }
+
+    .home-section .full-screen {
+        padding: 100px 0;
+    }
+
+    .home-section .home-img .img-box {
+        margin-bottom: 40px;
+        max-width: 350px;
+    }
+
+    .effect-3 {
+        margin-left: -60px;
+    }
+
+    .effect-4 {
+        left: 15%;
+    }
+
+    .effect-5 {
+        right: 4%;
+    }
+
+    .about-section .about-img {
+        flex: 0 0 60%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
+
+    .about-section .btn-1 {
+        padding: 10px 20px;
+    }
+
+    .about-section .skills .skill-item {
+        padding: 0 20px 0 0;
+    }
+
+}
+
+@media(max-width: 574px) {
+    .home-section .home-img .img-box {
+        max-width: 260px;
+    }
+    .home-section .home-text h2 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 406px) {
+
+    .header {
+        justify-content: center;
+    }
+
+    .header .nav__links li a span {
+        display: none;
+    }
+
+    .header .nav__links li a {
+        padding: 1.2rem;
+    }
+
+    .about-section .about-img {
+        flex: 0 0 90%;
+    }
+
+    .effect-3 {
+        top: -40px;
+    }
+
+    .effect-4 {
+        left: 7%;
+    }
+
+    .effect-5 {
+        right: 2%;
+    }
+
+}
+
+@media(max-width: 357px) {
+
+    .header .nav__links li a {
+        padding: 1rem;
+    }
+
+    .effect-wrap {
+        display: none;
+    }
+
+    .about-section .skills .skill-item .progress_bar span {
+        top: 50px;
+    }
+
+}
+
+@media(max-width: 338px) {
+
+    .header .nav__links li a {
+        padding: .5rem;
+    }
+
+}
+
+@media(max-width: 290px) {
+
+    .header .nav__links li a {
+        padding: .2rem;
+    }
+
+}
+
+
+  </style>
+  
+</head>
+
+<body>
+  <!-- Preloader Starts -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  <!-- Preloader Ends -->
+
+  <!-- Header Starts -->
+
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+
+        <nav>
+          <ul class="nav__links nav">
+            <li>
+              <a href="#home" class="link-item active">
+                <i class="fa fa-home" style="padding-right: .3rem"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="link-item">
+                <i class="fa fa-user" style="padding-right: .3rem"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="link-item">
+                <i class="fa fa-phone" style="padding-right: .3rem"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header Ends -->
+
+  <!-- Home section Start -->
+
+  <div class="effect-wrap">
+    <div class="effect effect-3"></div>
+  </div>
+
+  <section class="home-section active overflow-hidden" id="home">
+    <!-- Effect wrap start -->
+
+    <div class="effect-wrap">
+      <div class="effect effect-1"></div>
+      <div class="effect effect-2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="effect effect-3"></div>
+      <div class="effect effect-4"></div>
+      <div class="effect effect-5">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Effect wrap end -->
+    <div class="container">
+      <div class="row full-screen align-items-center">
+        <div class="home-text">
+          <p>Hello</p>
+          <h2>I'm Harman</h2>
+          <h1>Full Stack Web Developer</h1>
+          <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+        </div>
+        <div class="home-img">
+          <div class="img-box inner-shadow">
+            <img src="Harman.jpg" class="outer-shadow" alt="Harman Batheja" title="Harman Batheja" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home section Ends -->
+
+  <!-- About Section start -->
+
+  <div class="about-section" id="about" style="overflow-x: hidden">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-heading="main info">About Me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-img">
+          <div class="img-box inner-shadow">
+            <img src="Harman.jpg" class="outer-shadow" alt="Harman Batheja" title="Harman Batheja" />
+          </div>
+          <!-- Social Links Start -->
+          <div class="social-links">
+            <a href="https://www.facebook.com/harman.batheja.12/" target="_blank" class="outer-shadow hover-in-shadow">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/BathejaHarman" target="_blank" class="outer-shadow hover-in-shadow">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/harmanbatheja15/" target="_blank" class="outer-shadow hover-in-shadow">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://github.com/harmanbatheja15" target="_blank" class="outer-shadow hover-in-shadow">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <!-- Social Links End -->
+        </div>
+        <div class="about-info">
+          <p>
+            <span>Hi! My name is Harman Batheja. I am a Full Stack Web Developer.</span>
+            I am a web geek and loves making things on the
+            Internet. I used to play with
+            HTML, CSS, JavaScript, React JS, Python and Django.
+          </p>
+
+          <p>
+            I am a student of standard 10 in The Indo British
+            School, Nabha. Besides learning Web Development, I
+            loves to play Chess.
+          </p>
+          <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+        </div>
+      </div>
+      <!-- About Tabs Start -->
+      <div class="row">
+        <div class="about-tabs">
+          <div class="section-title">
+            <h2>Skills</h2>
+          </div>
+        </div>
+      </div>
+      <!-- About Tabs End -->
+
+      <!-- Skills start -->
+      <div class="row">
+        <div class="skills tab-content">
+          <div class="row">
+            <!-- Skill item start -->
+
+            <div class="skill-item">
+              <p>HTML</p>
+              <div class="progresses inner-shadow">
+                <div class="progress_bar" style="width: calc(90% - 14px)">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <!-- Skill item end -->
+
+            <!-- Skill item start -->
+            <div class="skill-item">
+              <p>CSS</p>
+              <div class="progresses inner-shadow">
+                <div class="progress_bar" style="width: calc(70% - 14px)">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <!-- Skill item end -->
+
+            <!-- Skill item start -->
+            <div class="skill-item">
+              <p>JavaScript</p>
+              <div class="progresses inner-shadow">
+                <div class="progress_bar" style="width: calc(60% - 14px)">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <!-- Skill item end -->
+            
+            <!-- Skill item start -->
+            <div class="skill-item">
+              <p>React JS</p>
+              <div class="progresses inner-shadow">
+                <div class="progress_bar" style="width: calc(50% - 14px)">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <!-- Skill item end -->
+            
+            <!-- Skill item start -->
+            <div class="skill-item">
+              <p>Python</p>
+              <div class="progresses inner-shadow">
+                <div class="progress_bar" style="width: calc(40% - 14px)">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <!-- Skill item end -->
+            
+            <!-- Skill item start -->
+            <div class="skill-item">
+              <p>Django</p>
+              <div class="progresses inner-shadow">
+                <div class="progress_bar" style="width: calc(40% - 14px)">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <!-- Skill item end -->
+
+            <!-- Skill item start -->
+            <div class="skill-item">
+              <p>C</p>
+              <div class="progresses inner-shadow">
+                <div class="progress_bar" style="width: calc(30% - 14px)">
+                  <span>30%</span>
+                </div>
+              </div>
+            </div>
+            <!-- Skill item end -->
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skills end -->
+    </div>
+  </div>
+
+  <!-- About Section end -->
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-heading="Contact">Get In Touch</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Contact item start -->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class="fa fa-phone"></i>
+            <span>Phone</span>
+            <p>+91 1234567890</p>
+          </div>
+        </div>
+        <!-- Contact item end -->
+
+        <!-- Contact item start -->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class="fa fa-envelope"></i>
+            <span>Email</span>
+            <p>test@gmail.com</p>
+          </div>
+        </div>
+        <!-- Contact item end -->
+
+        <!-- Contact item start -->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class="fa fa-map-marker"></i>
+            <span>Address</span>
+            <p>
+              Nabha - 147201 (Punjab)
+            </p>
+          </div>
+        </div>
+        <!-- Contact item end -->
+      </div>
+
+      <div class="row">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="row">
+              <div class="w-50">
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <input type="text" placeholder="Name" name="name" id="name" autocomplete="off" class="input-control" required />
+                </div>
+
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <input type="email" placeholder="Email" name="email" id="email" autocomplete="off" class="input-control" required />
+                </div>
+
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <input type="number" placeholder="Mobile Number" name="phone" id="phone" autocomplete="off" class="input-control" required />
+                </div>
+
+              </div>
+
+              <div class="w-50">
+                <div class="input-group outer-shadow hover-in-shadow">
+                  <textarea class="input-control" name="message" id="message" autocomplete="off" placeholder="Message" required></textarea>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="submit-btn">
+                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+
+</html>
