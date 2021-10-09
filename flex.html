@@ -10,15 +10,16 @@
         * {
             margin: 0;
             padding: 0;
+            background-color: black;
         }
 
         header nav ul a {
-            background-color: rgb(243, 218, 156);
-            color: blue;
+            background-color: rgb(119, 112, 112);
+            color: rgb(4, 4, 5);
             margin: 1vw;
             font-size: 2vw;
             font-weight: bold;
-            border: 2px solid red;
+            border: 2px rgb(119, 112, 112);
             border-radius: 25px;
             padding: 5px
         }
@@ -26,12 +27,12 @@
         header nav img {
             width: 4vw;
             height: 4vw;
-            border: 2px solid red;
+            border: 2px solid rgb(119, 112, 112);
             border-radius: 40px;
         }
 
         header nav {
-            background-color: black;
+            background-color: rgb(119, 112, 112);
             height: 10vh;
             display: flex;
             padding: 3px 0px 0px 0px;
@@ -41,12 +42,16 @@
         }
 
         .container {
-            background-color: aqua;
+            background-color: rgb(11, 12, 12);
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
         }
+        .container:hover .image {
+  opacity: 0.3;
+}
+
 
         /* .img1 img,
         .img2 img,
@@ -66,21 +71,22 @@
             height: 200px;
             margin: 50px;
         }
-        footer{
-            background-color: blue;
-            color: white;
-            padding: 1vw;
-            font-size: 1vw;
-            text-align: center;
-            text-transform: uppercase
-            }
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(241, 232, 232);
+        color: rgb(133, 131, 131);
+        text-align: center;
+    }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="/html/CSS/download (2).png" alt="">
+            <img src="bg.jpg" alt="">
             <ul>
                 <a href="#">Home</a>
                 <a href="#">About</a>
@@ -88,23 +94,25 @@
             </ul>
         </nav>
     </header>
+    <br>
+    <br>
     <div class="container">
         <div class="img1">
-            <img src="/html/CSS/bg.jpg" alt="">
+            <img src="img1.jpg" alt="">
         </div>
         <div class="img2">
-            <img src="/html/CSS/download.png" alt="">
+            <img src="img2.jpg" alt="">
         </div>
         <div class="img3">
-            <img src="/html/CSS/download (1).png" alt="">
+            <img src="img3.jpg" alt="">
         </div>
         <div class="img4">
-            <img src="/html/CSS/download (2).png" alt="">
+            <img src="img4.jpg" alt="">
         </div>
     </div>
-    <footer>
-        CopyRight &copy Flex Practice. All Right Reserved. 
-    </footer>
+    <div class="footer">
+        <p>CopyRight &copy Flex Practice. All Right Reserved. </p>
+      </div>
 </body>
 
 </html>
