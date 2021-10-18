@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Demo CSS</title>
-<style>
-    
-    body{
-        background-color: lightblue;
-    }
-    h1{
+  <head>
+    <title>Demo CSS</title>
+    <style>
+      body {
+        background: linear-gradient(to right, skyblue, dodgerblue);
+        padding: 0px;
+        margin: 0px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      h1 {
         color: red;
-        background-color:aqua;
+        text-shadow: 3px 3px black;
+        font-family: Verdana, Tahoma, sans-serif;
         text-align: center;
-        font-style: italic;
+        font-weight: bold;
         text-decoration: underline;
-    }
-    p{
-        font-family: Verdana;
-        font-size: 20px;
-        color:red;
-         background-color: yellow;
-    }
-    .name{
-        background-color: yellow;
-        color: red;
-        text-align: center;
-    }ha
+      }
+
+      .container{
+        width: 50%;
+        margin-left: 23%;
+        background-color: #002132;
+        border-radius: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 20px;
+        font-size: 1em;
+        color:white;
+        box-shadow: 2px 2px 4px 5px black;
+      }
+
+      p {
+        background-color: #f7dd97;
+        border-radius: 10px;
+        box-shadow: 1px 1px 24px 4px black;
+        margin: 40px;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.2em;
+        padding: 20px;
+        color:black;
+      }
     </style>
-    </head>
-<body>
-    
+  </head>
+  <body>
     <h1>My First CSS Example</h1>
-    <p>This is a paragraph</p>
-    <div class="name">
-       Hello There! My Name is Mahima.
+    <div class="container">
+      <p>This is a paragraph</p>
+      <div class="name">
+        <p>Hello There! My Name is Mahima.</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
