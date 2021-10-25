@@ -1,0 +1,23 @@
+body{
+    background-color: lightblue;
+}
+.title{
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    font-style: bold;
+    text-decoration: none;
+}
+p{
+    font-family: Verdana;
+}
+
+.mahima{
+    color: red;
+    text-align: center;
+}
+
+.igor{
+    color: #201080;
+    text-align: center;
+}
