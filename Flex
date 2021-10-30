@@ -1,0 +1,111 @@
+@@ -0,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul a {
+            background-color: rgb(243, 218, 156);
+            color: blue;
+            margin: 1vw;
+            font-size: 2vw;
+            font-weight: bold;
+            border: 2px solid red;
+            border-radius: 26px;
+            padding: 5px
+        }
+
+        header nav img {
+            width: 4vw;
+            height: 4vw;
+            border: 2px solid red;
+            border-radius: 40px;
+        }
+
+        header nav {
+            background-color: black;
+            height: 10vh;
+            display: flex;
+            padding: 3px 0px 0px 0px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1vw;
+        }
+
+        .container {
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* .img1 img,
+        .img2 img,
+        .img3 img,
+        .img4 img {
+            border-radius: 25px;
+            width: 15vw;
+            height: 15vw;
+            margin: 5vw;
+        } */
+        .img1 img,
+        .img2 img,
+        .img3 img,
+        .img4 img {
+            border-radius: 25px;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            padding: 1vw;
+            font-size: 1vw;
+            text-align: center;
+            text-transform: uppercase
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/html/CSS/download (2).png" alt="">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="img1">
+            <img src="/html/CSS/bg.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="/html/CSS/download.png" alt="">
+        </div>
+        <div class="img3">
+            <img src="/html/CSS/download (1).png" alt="">
+        </div>
+        <div class="img4">
+            <img src="/html/CSS/download (2).png" alt="">
+        </div>
+    </div>
+    <footer>
+        CopyRight &copy Flex Practice. All Right Reserved. 
+    </footer>
+</body>
+
+</html>
